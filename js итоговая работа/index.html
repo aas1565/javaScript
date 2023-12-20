@@ -50,13 +50,13 @@
               <li class="slide" data-active>
                 <div class="food-img-1">
                   <h2 class="food">Рататуй</h2>
-                  <button type="button"class="food-but-1 btn btn-outline-dark">300$</button>
+                  <button type="button"class="food-but-1 btn btn-outline-dark price" data-id="001">300$</button>
                 </div>
               </li>
               <li class="slide">
                 <div class="food-img-2">
                   <h2 class="food-2">Лазанья в белом вене</h2>
-                  <button type="button"class="food-but-2 btn btn-outline-dark">150$</button>
+                  <button type="button"class="food-but-2 btn btn-outline-dark price" data-id="002">150$</button>
                 </div>
               </li>
             </ul>
@@ -113,7 +113,7 @@
             </li>
           </ul>
           <div class="all-food">
-            <h3>Полное меню</h3>
+            <a href='menu.html'><h3>Полное меню</h3></a>
           </div>
         </section>
       </main>
@@ -187,15 +187,7 @@
             </tr>
           </thead>
           <tbody class="cart-table__goods">
-            <tr class="cart-item" data-id="003">
-              <td>Sweater</td>
-              <td>250p</td>
-              <td><button class="cart-btn-minus">-</button></td>
-              <td>2</td>
-              <td><button class="cart-btn-plus">+</button></td>
-              <td>500p</td>
-              <td><button class="cart-btn-delete">x</button></td>
-            </tr>
+
           </tbody>
           <tfoot>
             <tr>
@@ -208,14 +200,16 @@
         <form class="modal-form" action="">
           <input class="modal-input" type="text" placeholder="Имя" name="nameCustomer">
           <input class="modal-input" type="text" placeholder="Телефон" name="phoneCustomer">
-          <button class="button cart-buy">
-            <span class="button-text">Checkout</span>
-          </button>
         </form>
       </div>
     </div>
+
+    <button class="up-button" type="button">
+      ↑
+    </button>
     <script defer src="main.js"></script>
     <script defer src="theme.js"></script>
     <script defer src="basket.js"></script>
+    <script defer src="up.js"></script>
   </body>
 </html>
